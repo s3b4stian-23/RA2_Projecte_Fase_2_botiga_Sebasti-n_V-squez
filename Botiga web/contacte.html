@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacte | Chepamon Store</title>
+  <meta name="description" content="Posa't en contacte amb l'equip de Chepamon Store per a consultes, dubtes sobre jocs o comandes.">
+  <link rel="stylesheet" href="css/estils.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <h1>Chepamon Store</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Catàleg</a></li>
+        <li><a href="fitxa.html">Fitxa de joc</a></li>
+        <li><a href="contacte.html" class="active">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Formulari de Contacte</h2>
+    <p>Tens algun dubte sobre els nostres videojocs o vols fer una consulta? Omple el següent formulari i et respondrem com abans millor.</p>
+
+    <form action="#" method="post" id="contact-form">
+      
+      <fieldset>
+        <legend>Dades Personals</legend>
+
+        <div class="form-group">
+          <label for="nom">Nom i Cognoms *</label>
+          <input type="text" id="nom" name="nom" placeholder="Ex: Marc Garcia" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correu Electrònic *</label>
+          <input type="email" id="email" name="email" placeholder="usuari@correu.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="edat">Edat</label>
+          <input type="number" id="edat" name="edat" min="12" max="99" placeholder="Ex: 25">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Detalls de la Consulta</legend>
+
+        <div class="form-group">
+          <label for="motiu">Motiu de la consulta *</label>
+          <select id="motiu" name="motiu" required>
+            <option value="" disabled selected>Selecciona una opció</option>
+            <option value="informacio">Informació general</option>
+            <option value="compra">Dubte sobre una compra o comanda</option>
+            <option value="tasacio">Venda o valoració de joc antic</option>
+            <option value="suport">Suport tècnic</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="plataforma-preferida">Plataforma principal que utilitzes:</label>
+          <div class="radio-group">
+            <input type="radio" id="plat-n64" name="plataforma" value="n64">
+            <label for="plat-n64">Nintendo 64 / Retro</label>
+
+            <input type="radio" id="plat-ps5" name="plataforma" value="ps5">
+            <label for="plat-ps5">PlayStation 5</label>
+
+            <input type="radio" id="plat-pc" name="plataforma" value="pc">
+            <label for="plat-pc">PC Gaming</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="missatge">Missatge *</label>
+          <textarea id="missatge" name="missatge" rows="5" placeholder="Escriu el teu missatge o consulta detallada aquí..." required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Privacitat i Confirmació</legend>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="newsletter" name="newsletter" value="si">
+          <label for="newsletter">Vull rebre les ofertes setmanals i novetats al meu correu.</label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="politica" name="politica" required>
+          <label for="politica">He llegit i accepto la política de privacitat *</label>
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-submit">Enviar Missatge</button>
+        <button type="reset" class="btn-reset">Netejar Formulari</button>
+      </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Chepamon Store. Catàleg actualitzat el <time datetime="2026-05-23">23/05/2026</time>.</p>
+  </footer>
+
+</body>
+</html>
