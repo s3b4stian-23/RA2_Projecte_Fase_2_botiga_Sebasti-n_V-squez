@@ -9,7 +9,6 @@
   --text-muted: #666666;       
   --border-color: #e0e0e0;
 
-  /* Tipografia */
   --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-heading: 'Trebuchet MS', Arial, sans-serif;
 }
@@ -37,7 +36,7 @@ body {
   flex-direction: column;
 }
 
-/* Estils de text generals */
+
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   color: var(--primary-color);
@@ -114,7 +113,6 @@ aside {
 
 .catalog-grid {
   display: grid;
-  /* Quadrícula adaptable automàtica */
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 2rem;
   margin-top: 1.5rem;
@@ -161,7 +159,6 @@ aside {
   color: var(--text-color);
 }
 
-/* Enllaç directament al títol de la targeta */
 .game-card h3 a {
   color: var(--primary-color);
 }
